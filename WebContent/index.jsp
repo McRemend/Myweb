@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,13 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form id="uploadForm"  action="${pageContext.request.contextPath}/uploadfile" method="post" enctype="multipart/form-data">
- <input type="file" name="uploadfile" id="uploadFile" style="position:absolute;top:0px;width:0px"/>
-</form>
-<input type="button" value="上传" id="btn"/>
+	<form id="uploadForm"
+		action="${pageContext.request.contextPath}/uploadfile" method="post"
+		enctype="multipart/form-data">
+		<input type="file" name="uploadfile" id="uploadFile"
+			style="position: absolute; top: 0px; width: 0px" />
+	</form>
+	<input type="button" value="上传" id="btn" />
 </body>
 <script src="/Myweb/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript">
+<script type="text/javascript">
         $(function () {
             //按钮的点击事件
             $('#btn').click(function () {
